@@ -1,0 +1,24 @@
+{
+  "name": "estadictchanllenge",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start:challenge": "node src/challenge/TestCalculateProbabilities.js",
+    "start:server": "node src/app.js",
+    "dev:server": "nodemon src/app.js "
+  },
+  "keywords": [],
+  "author": "Alejandro Soto",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
