@@ -8,7 +8,7 @@ $ npm install
 
 ## Running calculateProbabilities function
 
-- Change teh input value in the function and then run the next command 
+- Change the input value in the function and then run the next command 
 ```bash
 $ npm run start:challenge
 ```
