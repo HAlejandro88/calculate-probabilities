@@ -1,6 +1,6 @@
 const calculateProbabilities = (input) => {
-    const dp = new Array(input + 1).fill(0);
-    dp[6] = 1;
+    const response = new Array(input + 1).fill(0);
+    response[6] = 1;
 
 
     for (let k = 7; k <= input; k++) {
@@ -9,16 +9,16 @@ const calculateProbabilities = (input) => {
 
         for (let i = 1; i <= 6; i++) {
             if (k - i >= 6) {
-                console.log(totalProbability += (1 / 6) * dp[k - i], 'total probability')
-                totalProbability += (1 / 6) * dp[k - i];
+                console.log(totalProbability += (1 / 6) * response[k - i], 'total probability')
+                totalProbability += (1 / 6) * response[k - i];
             }
         }
 
-        dp[k] = totalProbability;
+        response[k] = totalProbability;
     }
 
 
-    return dp.slice(6);
+    return response.slice(6);
 }
 
 module.exports = calculateProbabilities
